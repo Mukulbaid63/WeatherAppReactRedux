@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<div
+  className="d-flex flex-column align-items-center justify-content-center"
+>
+  <div
+    className="m-4 p-4"
+    style={
+      Object {
+        "border": "1px solid black",
+        "borderRadius": "10px",
+      }
+    }
+  >
+    <form
+      className="d-flex  flex-column align-items-center justify-content-center"
+    >
+      <h1>
+        PLEASE LOGIN: 
+      </h1>
+      <input
+        className="form-control mb-3"
+        onChange={[Function]}
+        placeholder="Enter your email address..."
+        type="email"
+        value=""
+      />
+      <input
+        className="form-control mb-3"
+        onChange={[Function]}
+        placeholder="Enter your password"
+        type="password"
+        value=""
+      />
+      <button
+        className="btn btn-primary mb-3"
+        onClick={[Function]}
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 offset-sm-3 text-left"
+    >
+      <div
+        className="alert alert-danger"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      >
+        
+      </div>
+    </div>
+  </div>
+  <p>
+    TEST USER FOR LOGIN:
+    <br />
+     Email:
+    <b>
+      user@test.com
+    </b>
+    <br />
+    Password:
+    <b>
+      test1234
+    </b>
+  </p>
+</div>
+`;

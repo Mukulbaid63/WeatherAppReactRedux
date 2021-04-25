@@ -45,7 +45,7 @@ const WeatherMenu = (props) => {
           )}
           <div className="ml-3" style={{ overflow: "auto" }}>
             {props.weather.map((item, id) => (
-              <ForecastWeather data={item} />
+              <ForecastWeather key={id} data={item} />
             ))}
           </div>
         </div>
