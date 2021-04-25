@@ -27,7 +27,7 @@ const Login = () => {
   const errorMessage = () => {
     return (
       <div className="row">
-        <div className="col-md-6 offset-sm-3 text-left">
+        <div className="col-12 offset-sm-3 text-left">
           <div
             className="alert alert-danger"
             style={{ display: error ? "" : "none" }}
@@ -37,7 +37,7 @@ const Login = () => {
         </div>
       </div>
     );
-  };
+  }
 
   const submitHandler = () => {
     setvalues({ ...values, loading: true });
@@ -50,7 +50,7 @@ const Login = () => {
 
   const signInform = () => {
     return (
-      <div className="row center m-4">
+      <div className="m-4 p-4" style={{border:'1px solid black',borderRadius:'10px'}} >
         <form className="d-flex  flex-column align-items-center justify-content-center">
           <h1>PLEASE LOGIN: </h1>
           <input
@@ -75,11 +75,16 @@ const Login = () => {
     );
   };
   return (
-    <div className="d-flex flex-column align-items-center justify-content-center">
+    <div className="d-flex flex-column align-items-center justify-content-center" >
       {signInform()}
       {loadingMessage()}
       {errorMessage()}
-      <p>TEST USER FOR LOGIN:<br/> Email:<b>user@test.com</b><br/>Password:<b>user1234</b></p>
+      <p>
+        TEST USER FOR LOGIN:
+        <br /> Email:<b>user@test.com</b>
+        <br />
+        Password:<b>test1234</b>
+      </p>
     </div>
   );
 };
