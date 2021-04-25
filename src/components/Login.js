@@ -42,6 +42,7 @@ const Login = () => {
   const submitHandler = () => {
     setvalues({ ...values, loading: true });
     if (email === "user@test.com" && password === "test1234") {
+        setvalues({...values,email:"",password:""})
       return history.push("/weather");
     } else {
       setvalues({ ...setvalues, error: "Invalid Credentials." });
