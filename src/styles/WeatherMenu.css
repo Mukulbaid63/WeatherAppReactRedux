@@ -8,15 +8,34 @@
   
 }
 select{
-    background-color: rgba(255, 255, 255, 0.099);
+    background-color: rgba(14, 39, 85, 0.5);
+    /* background-color: #283369; */
     backdrop-filter: brightness(75%);
     font-size: 20px;
     padding: 10px;
     width: 200px;
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 0 20px;
 
 }
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: #bebdbd00;
+  }
+  ::-webkit-scrollbar-track {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255);;
+  }
 select:focus{
     outline: none;
 }
