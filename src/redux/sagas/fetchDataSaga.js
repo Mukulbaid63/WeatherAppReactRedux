@@ -6,10 +6,9 @@ import { SEND_CURRENT_REQUEST } from "../actionTypesCurrent";
 
 function* asyncFetchRequest(action){
     try{
-        const URL=`http://api.openweathermap.org/data/2.5/forecast?q=${action.payload}&units=metric&appid=3fbb2b31fd3e77c536be64abc677a4d1`
+        const URL=`https://api.openweathermap.org/data/2.5/forecast?q=${action.payload}&units=metric&appid=3fbb2b31fd3e77c536be64abc677a4d1`
         
         const response =yield call(()=>fetch(URL).then(weather=>(weather.json())).then(weather=>(weather.list)));
-        console.log(response);
         yield put(fetchDataSuccess(response))
     }
     catch(error){
@@ -23,7 +22,6 @@ function* asyncCurrentFetchRequest(action){
         const URL=`https://api.openweathermap.org/data/2.5/weather?q=${action.payload}&units=metric&appid=87cde31000e5170290cebdd94820d23d`
         
         const response =yield call(()=>fetch(URL).then(weather=>(weather.json())));
-        console.log(response);
         yield put(fetchCurrentDataSuccess(response))
         
     }

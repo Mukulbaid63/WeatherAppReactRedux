@@ -2,7 +2,6 @@ import React from "react";
 
 const CurrentWeather = ({ currentWeather }) => {
   let imgSrc = "./icons/" + currentWeather.weather[0].icon + ".png";
-  console.log(imgSrc);
   return (
     <div className="text-light" style={{ fontFamily: "Montserrat" }}>
       <div className="d-flex center">
