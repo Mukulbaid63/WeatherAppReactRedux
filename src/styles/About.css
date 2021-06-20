@@ -1,7 +1,8 @@
 #about{
     /* background-image: url('../assets/bg4.jpg'); */
+    font-family: 'Montserrat';
     background-size: cover;
     background-position: bottom center;
-    background-color: rgba(38, 21, 68, 0.856);
+    background-color: rgba(23, 12, 41, 0.877);
     backdrop-filter: brightness(75%);
 }

@@ -52,7 +52,7 @@ const WeatherMenu = (props) => {
             <CurrentWeather currentWeather={props.currentWeather} />
           )}
           <div className="ml-3" style={{ overflow: "auto" }}>
-            {props.weather===undefined && props.weather!=={} ?<div className="alert alert-danger fw-bold" style={{fontFamily:'Montserrat'}}>Invalid city.</div>:props.weather.map((item, id) => (
+            {props.weather===undefined && props.weather!=={} ?<div className="alert alert-danger fw-bold" style={{fontFamily:'Montserrat'}}>😞Invalid city.</div>:props.weather.map((item, id) => (
               <ForecastWeather key={id} data={item} />
             ))}
           </div>

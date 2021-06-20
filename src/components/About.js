@@ -5,7 +5,17 @@ const About = () => {
         <div className="text-light p-4" style={{flex:'0.3'}} id="about">
             
             <h2 className="mb-4 border-bottom border-white border-1">ABOUT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h2>
-            <p>a suscipit nisi nisl non mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod fermentum finibus. Phasellus tempus enim sed magna euismod rutrum. Aliquam erat volutpat. Nulla euismod felis eu ultrices euismod.</p>
+            <p>👋We are the developers making some cool apps.✨⚛️
+
+                <br/>
+                <br/>
+
+                Wanna contribute with us:<a href="https://github.com/Mukulbaid63/WeatherAppReactRedux/"> 👉Join us</a>
+                <br/>
+
+                Any other queries:<a href="https://github.com/Mukulbaid63/WeatherAppReactRedux/">💬DM here!</a>
+
+            </p>
             </div>
     );
 };
