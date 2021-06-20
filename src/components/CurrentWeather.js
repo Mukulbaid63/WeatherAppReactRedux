@@ -20,7 +20,8 @@ const CurrentWeather = ({ currentWeather }) => {
           style={{ height: "80px", width: "80px" }}
         ></img> */}
       </div>
-      <div style={{ fontSize: "20px", fontFamily: "Montserrat" }}>
+      
+      <div className="d-flex flex-column" style={{ fontSize: "20px", fontFamily: "Montserrat" }}>
         {currentWeather.weather[0].main}
       </div>
       <div className="d-flex justify-content-around">
